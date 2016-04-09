@@ -1,0 +1,61 @@
+   	<section class="artist-banner">
+	   <div class="container">           
+	   </div>
+   	</section>
+	
+	<section class="normal">
+		<div class="container">
+            <form class="artist-sign-up" method="POST" action="" accept="">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h4 class="modal-title"><center>Sign Up</center></h4>
+                </div>
+                <div class="modal-body row">
+				   
+ 				   <div class="col-md-12">
+ 	                 {% if errors|length > 0 %}
+           <div class="col-md-12">
+                     <div class="alert alert-danger alert-dismissible" role="alert">
+                       <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <strong>Errors!</strong> <br/>
+              {% for error in errors%}
+                      
+                      {{error|raw}}
+              {% endfor%}
+
+                     </div>  
+                  
+          </div>
+          {% endif %}
+ 					</div>
+
+                  <div class="form-group col-md-12">
+                    <!-- <label>Name</label> -->
+                    <input type="text" placeholder="Name" name="name" id="datepicker" name="begin" required="required" class="form-control width-100per" />
+                  </div>
+   			  
+                  <div class="form-group col-md-6">
+                    <!-- <label>Title</label> -->
+                    <input type="email" name="email" placeholder="Email" id="datepicker_previous" name="previous" required="required" class="form-control width-100per" />
+                  </div>
+			  
+                  <div class="form-group col-md-6">
+                    <!-- <label>Title</label> -->
+                    <input type="text" name="phone" placeholder="Phone" id="datepicker_preceeding" name="preceeding" required="required" class="form-control width-100per" />
+                  </div>
+                   <div class="form-group col-md-12">
+                    <!-- <label>Title</label> -->
+                    <input type="text" name="city" placeholder="Location" id="datepicker_preceeding" name="preceeding" required="required" class="form-control width-100per" />
+                  </div>
+                  <div class="form-group col-md-12">
+                    <!-- <label>Name</label> -->
+ 				   <textarea name="description" class="form-control width-100per" rows="5" placeholder="Your Descripton"></textarea>
+                  </div>
+ 				 <center>
+ 				 	<button class="btn btn-makeup" name=""> <i class="fa fa-user"></i> Sign Up</button>
+ 				 </center>
+                </div>
+              </div>
+            </form>
+		</div>
+	</section>

@@ -1,0 +1,4 @@
+vendor
+deploy.php
+.env
+.DS_Store

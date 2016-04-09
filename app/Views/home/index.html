@@ -1,0 +1,183 @@
+   	<section class="banner">
+	   <div class="container">
+		   <center><h1>Get Professional Makeup Artists for your Events</h1></center>
+           <form class="artist-search" method="POST" accept="">
+             <div class="modal-content">
+               <div class="modal-header">
+                 <h4 class="modal-title"><center>Search for an Artist</center></h4>
+               </div>
+               <div class="modal-body row">
+               		{% if errors|length > 0 %}
+				   <div class="col-md-12">
+				   
+	                   <div class="alert alert-danger alert-dismissible" role="alert">
+	                     <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	                     <strong>Errors!</strong> <br/>
+				   		{% for error in errors%}
+	                    	{{error|raw}} <br/>
+				   		{% endfor%}
+
+	                   </div>  
+	                
+					</div>
+					{% endif %}
+
+                 <div class="form-group col-md-12">
+                   <!-- <label>Name</label> -->
+                   <input type="text" placeholder="Name" name="name" required="required" class="form-control width-100per" />
+                 </div>
+   			  
+                 <div class="form-group col-md-6">
+                   <!-- <label>Title</label> -->
+                   <input type="email" name="email" placeholder="Email" required="required" class="form-control width-100per" />
+                 </div>
+			  
+                 <div class="form-group col-md-6">
+                   <!-- <label>Title</label> -->
+                   <input type="number" name="phone" placeholder="Phone" required="required" class="form-control width-100per" />
+                 </div>
+				 
+                 <div class="form-group col-md-6">
+                   <!-- <label>Title</label> -->
+				   <select name="service_type_id" class="form-control width-100per">
+					   <option value="">Select Service</option>
+					   <option value="1">Makeup</option>
+					   <option value="2">Gele</option>
+				   </select>
+                 </div>
+			  
+                 <div class="form-group col-md-6">
+                   <!-- <label>Title</label> -->
+				   <select name="no_clients" class="form-control width-100per">
+					   <option value="">Number of Clients</option>
+					   <option value="1">1</option>
+					   <option value="2">2</option>
+					   <option value="3">3</option>
+					   <option value="4">4</option>
+					   <option value="5">5</option>
+					   <option value="6">6</option>
+				   </select>
+                 </div>
+				 
+                 <div class="form-group col-md-12">
+                   <!-- <label>Name</label> -->
+
+				  <select name="city" class="form-control width-100per">
+					   <option value="">Select Location</option>
+					   <option value="lagos">Lagos</option>
+					   <option value="abuja">Abuja</option>
+				   </select>
+                 </div>
+				 <center>
+				 	<button class="btn btn-makeup" name=""><i class="fa fa-search"></i> Search</button>
+				 </center>
+               </div>
+             </div>
+           </form>
+	   </div>
+   	</section>
+	
+	<section class="cities">
+		<div class="container">
+			<div class="col-md-offset-2 col-md-8">
+				<center>
+					<h3>Major Cities</h3>
+					<p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+				</center>
+				<ul class="cities">
+					<li><a href="#"><i class="fa fa-map-marker"></i> Lagos</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Abuja</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Onitsha</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Abeokuta</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Benin</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Enugu</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Shagamu</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Warri</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Ibadan</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Port Harcourt</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Owerri</a></li>
+					<li><a href="#"><i class="fa fa-map-marker"></i> Ilorin</a></li>
+				</ul>
+			</div>
+		</div>
+	</section>
+	
+	<section class="categories">
+		<div class="container">
+			<div class="col-md-offset-2 col-md-8">
+				<div class="row">
+					<h2>Title Here</h2>
+					<div class="col-sm-6">
+						
+						<div class="category-box">
+							<a href="" class="">
+								<img src="{{base_url}}images/makeup-artist.png">
+								<p class="category-name">Makeup Artists</p>
+								<p class="category-count">200 Professionals</p>
+							</a>
+						</div>
+						
+					</div>
+					<div class="col-sm-6">
+							<div class="category-box">
+								<a href="">
+									<img src="{{base_url}}images/stylists.png">
+									<p class="category-name">Hair Stylists</p>
+									<p class="category-count">137 Professionals</p>
+								</a>
+							</div>
+						
+					</div>
+					<div class="col-sm-6">
+							<div class="category-box">
+								<a href="">
+									<img src="{{base_url}}images/head-gear.png">
+									<p class="category-name">Head Gear</p>
+									<p class="category-count">29 Professionals</p>
+								</a>
+							</div>
+					</div>
+					<div class="col-sm-6">
+							<div class="category-box">
+								<a href="">
+									<img src="{{base_url}}images/cosmetologists.png">
+									<p class="category-name">Cosmetologists</p>
+									<p class="category-count">58 professionals</p>
+								</a>
+							</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</section>
+    <!-- Marketing messaging and featurettes
+    ================================================== 
+	-->
+   <section class="bottom">
+       <div class="container marketing">
+
+         <!-- Three columns of text below the carousel -->
+         <div class="row">
+           <div class="col-lg-4">
+             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+             <h2>Heading</h2>
+             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
+             <p><a class="btn btn-artist" href="#" role="button">View details &raquo;</a></p>
+           </div><!-- /.col-lg-4 -->
+           <div class="col-lg-4">
+             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+             <h2>Heading</h2>
+             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
+             <p><a class="btn btn-artist" href="#" role="button">View details &raquo;</a></p>
+           </div><!-- /.col-lg-4 -->
+           <div class="col-lg-4">
+             <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
+             <h2>Heading</h2>
+             <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+             <p><a class="btn btn-artist" href="#" role="button">View details &raquo;</a></p>
+           </div><!-- /.col-lg-4 -->
+         </div><!-- /.row -->
+
+       </div><!-- /.container -->
+   </section>
