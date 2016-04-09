@@ -6,6 +6,7 @@ use Core\View as View;
 class Controller
 {
 	public $data;
+	public $template;
 	
 	function __construct()
 	{
